@@ -32,20 +32,19 @@
 </head>
 <body>
 
-<div role="navigation" class="navbar navbar-default navbar-static" id="menu">
+<nav class="navbar navbar-default" id="menu">
     <div class="container">
-        <div class="mw-row">
-            <div class="mw-col" style="width: 20%">
-                <div class="mw-col-container">
-                    <module type="logo" id="logo_header" default-text="Bootstrap" class="navbar-header"/>
-                </div>
-            </div>
-            <div class="mw-col" style="width: 80%">
-                <div class="mw-col-container">
-                    <module type="menu" name="header_menu" id="main-navigation" template="navbar"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
+            <module type="logo" id="logo_header" default-text="Bootstrap"/>
+        </div>
+
+        <module type="menu" name="header_menu" class="collapse navbar-collapse" id="main-nav" template="navbar"/>
+    </div>
+</nav>
