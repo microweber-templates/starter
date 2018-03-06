@@ -22,7 +22,7 @@ position: 5
             </div>
 
             <div class="col-md-6">
-                <div style="padding-left: 40px;">
+                <div style="padding-left: 40px;" class="allow-drop">
                     <div>
                         <h3><?php print _lang('Address'); ?></h3>
                         <hr>
